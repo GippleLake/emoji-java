@@ -1,11 +1,17 @@
-# emoji util forked from vdurmont/emoji-java
+# emoji检测工具
 
-## 改动
-1. 删除其余方法，只提供检测字符串是否包含emoji，以及去除所有emoji
-2. org.json替换为fastjson
+fork from [emoji-java](https://github.com/vdurmont/emoji-java)
 
-##EmojiParser
+## 主要改动
 
-EmojiParser#removeAllEmojis(String): removes all the emojis from the String
-EmojiParser#containsEmojis(String): check the input string contains emojis or not 
+1. 去除多余方法
+2. org.json换成fastjson
+## EmojiParser
+
+## 使用方式
+工程就5个类和一个emoji.json文件，可直接引入项目中使用。
+
+对外提供俩个方法
+- EmojiParser#removeAllEmojis(String): 删除字符串中的所有emoji
+- EmojiParser#containsEmojis(String): 检查字符串中是否有emoji 
   
