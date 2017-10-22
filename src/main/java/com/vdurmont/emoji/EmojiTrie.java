@@ -10,7 +10,7 @@ public class EmojiTrie {
   public EmojiTrie(Collection<Emoji> emojis) {
     for (Emoji emoji : emojis) {
       Node tree = root;
-      for (char c: emoji.getUnicode().toCharArray()) {
+      for (char c: emoji.getEmoji().toCharArray()) {
         if (!tree.hasChild(c)) {
           tree.addChild(c);
         }
